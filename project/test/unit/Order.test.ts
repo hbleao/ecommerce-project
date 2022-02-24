@@ -1,7 +1,7 @@
-import Order from '../src/Order';
-import Product from '../src/Product';
-import Coupon from '../src/Coupon';
-import Dimension from '../src/Dimension';
+import Order from '../../src/domain/entity/Order';
+import Product from '../../src/domain/entity/Product';
+import Coupon from '../../src/domain/entity/Coupon';
+import Dimension from '../../src/domain/entity/Dimension';
 
 describe('Order', () => {
   it('should be able to create an order', () => {

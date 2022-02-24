@@ -1,6 +1,6 @@
-import Dimension from "../src/Dimension";
-import Freight from "../src/Freight";
-import Product from "../src/Product";
+import Dimension from "../../src/domain/entity/Dimension";
+import Freight from "../../src/domain/entity/Freight";
+import Product from "../../src/domain/entity/Product";
 
 describe('Freight', () => {
   it('should be able to calculate the freight of one product', () => {

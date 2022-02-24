@@ -1,4 +1,4 @@
-import Cpf from '../src/Cpf';
+import Cpf from '../../src/domain/entity/Cpf';
 
 const invalidCpfWithSameDigits = [
   '111.111.111-11',

@@ -1,4 +1,4 @@
-import Coupon from "../src/Coupon";
+import Coupon from "../../src/domain/entity/Coupon";
 
 const discountList = [
   10,
@@ -9,8 +9,8 @@ const discountList = [
 
 describe('Coupon', () => {
   it('should be able to create a discount coupon', () => {
-    const coupon = new Coupon("VALE20", 20,  new Date());
-     const isExpired = coupon.isExpired(); 
+    const coupon = new Coupon("VALE20", 20,  new Date('2022-01-11T10:00:00'));
+    const isExpired = coupon.isExpired(new Date('2022-01-10T10:00:00')); 
     expect(isExpired).toBeFalsy();
   });
 

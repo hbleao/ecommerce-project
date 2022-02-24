@@ -1,5 +1,5 @@
-import Dimension from "../src/Dimension";
-import Product from "../src/Product";
+import Dimension from "../../src/domain/entity/Dimension";
+import Product from "../../src/domain/entity/Product";
 
 describe('Product', () => {
   it('should be able to create a product with dimensions', () => {

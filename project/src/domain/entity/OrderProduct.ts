@@ -1,4 +1,4 @@
-export default class OrderItem {
+export default class OrderProduct {
   constructor(
     readonly idItem: number,
     readonly price: number,
