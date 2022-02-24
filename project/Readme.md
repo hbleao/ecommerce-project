@@ -42,26 +42,26 @@ Conceito - O TDD é uma forma de construir software.
 
 ### Test Patterns
 
-##### Dummy
+#### Dummy
 Objetos que criamos apenas para completar a lista de parâmetros que precisamos
 passar para invocar um determinado método. <br>
 
-##### Stubs
+#### Stubs
 Objetos que retornam respostas prontas, definidas para um determinado teste, 
 por questão de performance ou segurança (exemplo: quando eu executar o método 
 fazer pedido preciso que o método pegar cotação do dólar retorne R$3,00). <br>
 
-##### Spies:
+#### Spies:
 Objetos que 'espionam' a execucão do método e armazenam os resultados para
 verificação posterior (exemplo: quando eu executar o método fazer pedido
 preciso saber se o método enviar email foi invocado internamente e com quais 
 parâmetros). <br>
 
-##### Mocks
+#### Mocks
 Objetos similares a stubs e spies, permitem que você diga exatamente o que 
 quer que ele faça e o testes vai quebrar se isso não acontecer. <br>
 
-##### Fake
+#### Fake
 Objetos que tem implementações que simulam o funcionamento da instância real,
 que seria utilizada em produção (exemplo: uma base de dados em memória). <br>
 
