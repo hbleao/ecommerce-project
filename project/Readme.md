@@ -2,7 +2,7 @@
 
 Vamos implementar um sistema de vendas online com a possibilidade de realizar pedidos com múltiplos itens, cada um deles com uma quantidade variável, calculando o frete, os impostos, aplicando um cupom de desconto e ainda interagindo com o estoque. Além disso teremos ainda fluxos de pagamento e cancelamento do pedido realizado.
 
-## Algoritmos
+### Algoritmos
 
 > Algoritmo de CPF:
 [algoritmo CPF](http://www.macoratti.net/alg_cpf.htm)
@@ -16,8 +16,6 @@ Formula:  (Altura x Comprimento x Largura) <br>
 Formula:  (peso / volume) <br>
  - Exemplo: um objeto que possui o peso de 3kg e um volume de 0.03 m3 <br>
  -  3 / 0.03 = 100 <br>
-
-# Conceitos Abordados
 
 ### Tests
 
