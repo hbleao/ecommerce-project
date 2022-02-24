@@ -2,35 +2,27 @@
 
 Vamos implementar um sistema de vendas online com a possibilidade de realizar pedidos com múltiplos itens, cada um deles com uma quantidade variável, calculando o frete, os impostos, aplicando um cupom de desconto e ainda interagindo com o estoque. Além disso teremos ainda fluxos de pagamento e cancelamento do pedido realizado.
 
+## Algoritmos
 
-## Testes
-1 - Não deve fazer um pedido com cpf inválido
-2 - Deve fazer um pedido com 3 itens (com descrição, preço e quantidade)
-3 - Deve fazer um pedido com cupom de desconto (percentual sobre o total do pedido)
+> Algoritmo de CPF:
+[algoritmo CPF](http://www.macoratti.net/alg_cpf.htm)
 
+> Algoritmo de Volume: 
+Formula:  (Altura x Comprimento x Largura)
+ - Exemplo: um objeto com as dimensões (A/100 x C/100 x L/100)
+ - 100/100 * 30/100 * 10/100 = 0.03 m3
 
-## Considere
-
-
-Refatorar o algoritmo de validação de cpf
-
-Sugestões
-
-Utilize a sua linguagem e biblioteca de teste de sua preferência
-Faça a modelagem da forma que desejar e não se preocupe por enquanto, vamos 
-implementar juntos na aula seguinte com influências de DDD e Clean Architecture
-
-Dicas
-Devem existir no mínimo 2 arquivos, um de teste e outro que implementa os cenários propostos
-Tente seguir com disciplina, criando primeiro um teste que falha, depois 
-fazendo e teste passar e refatorando
-Link do funcionamento do algoritmo de cpf: [algoritmo CPF](http://www.macoratti.net/alg_cpf.htm)
-
+> Algoritmo da densidade: 
+Formula:  (peso / volume)
+ - Exemplo: um objeto que possui o peso de 3kg e um volume de 0.03 m3
+ -  3 / 0.03 = 100
 
 # Conceitos Abordados
 
-### FIRST
-Fast(F) - Os testes devem roder rápido
+### Tests
+
+#### FIRST
+Fast(F) - Os testes devem rodar rápido
 Independent(I) - Não devem existir dependência entre os testes, eles devem.
 poder ser executados de forma isolada.
 Repeatable(R) - O resultado deve ser o mesmo independente da quantidade de 
@@ -43,7 +35,13 @@ Timely(T) - Os testes devem ser escritos antes do código-fonte.
 ### TDD
 Conceito - O TDD é uma forma de construir software.
 
-Test Patterns
+> Leis do TDD
+
+1 - Você não deve escrever NENHUMA linha de código sem que ANTES exista um teste que falhe.
+2 - Você não deve escrever MAIS DO QUE O NECESSÁRIO para evidenciar uma FALHA.
+3 - Você não deve escrever código que o suficiente para que o teste passe.
+
+### Test Patterns
 
 > Dummy 
 Objetos que criamos apenas para completar a lista de parâmetros que precisamos 
@@ -67,3 +65,8 @@ quer que ele faça e o testes vai quebrar se isso não acontecer.
 > Fake
 Objetos que tem implementações que simulam o funcionamento da instância real,
 que seria utilizada em produção (exemplo: uma base de dados em memória).
+
+### Design Patterns
+
+> Facade
+Abstrai um subsistema mais complexo oferecendo uma interface mais simples de interação.
