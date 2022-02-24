@@ -21,7 +21,7 @@ Formula:  (peso / volume) <br>
 
 #### FIRST
 Fast(F) - Os testes devem rodar rápido <br>
-Independent(I) - Não devem existir dependência entre os testes, eles devem.
+Independent(I) - Não devem existir dependência entre os testes, eles devem
 poder ser executados de forma isolada. <br>
 Repeatable(R) - O resultado deve ser o mesmo independente da quantidade de 
 vezes que seja executado. <br>
