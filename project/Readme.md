@@ -34,7 +34,7 @@ Timely(T) - Os testes devem ser escritos antes do código-fonte. <br>
 ### TDD
 Conceito - O TDD é uma forma de construir software.
 
-> Leis do TDD
+### Leis do TDD
 
 1 - Você não deve escrever NENHUMA linha de código sem que ANTES exista um teste que falhe. <br>
 2 - Você não deve escrever MAIS DO QUE O NECESSÁRIO para evidenciar uma FALHA. <br>
