@@ -47,10 +47,10 @@ passar para invocar um determinado método. <br>
 #### Stubs
 Objetos que retornam respostas prontas, definidas para um determinado teste, 
 por questão de performance ou segurança (exemplo: quando eu executar o método 
-fazer pedido preciso que o método pegar cotação do dólar retorne R$3,00). <br>
+fazer pedido preciso que o método getDollarCotation retorne a uma determinada cotação). <br>
 
-#### Spies:
-Objetos que 'espionam' a execucão do método e armazenam os resultados para
+#### Spies
+Objetos que 'espionam' a execução do método e armazenam os resultados para
 verificação posterior (exemplo: quando eu executar o método fazer pedido
 preciso saber se o método enviar email foi invocado internamente e com quais 
 parâmetros). <br>
@@ -61,7 +61,25 @@ quer que ele faça e o testes vai quebrar se isso não acontecer. <br>
 
 #### Fake
 Objetos que tem implementações que simulam o funcionamento da instância real,
-que seria utilizada em produção (exemplo: uma base de dados em memória). <br>
+que seria utilizada em produção.<br>
+Exemplo: uma base de dados em memória. <br>
+
+### Estrategias de Testes
+
+#### Unitários (Unit)
+- Os testes unitários, testam uma a menor parte de um software, ou seja,
+testam determinada funcionalidade ou componente de forma isolada.<br>
+- Exemplo: testar um input de texto<br>
+
+#### Integração (Integration)
+- Os testes de integração testam varias partes do software de uma única vez.<br>
+- Exemplo: testar validação dos inputs de um formulário em uma tela de cadastro.<br>
+
+#### ponta a ponta (E2E) 
+- Os testes de ponta a ponta testam uma funcionalidade completa em um ambiente 
+que simula o ambiente de produção.<br>
+- Exemplo: testar se após o cadastro do cliente, o mesmo será redirecionado para 
+a home do site.
 
 ### Design Patterns
 

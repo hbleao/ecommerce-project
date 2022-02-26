@@ -8,11 +8,13 @@ describe('PlaceOrder', () => {
     const productRepository = new ProductRepositoryMemory();
     const orderRepository = new OrderRepositoryMemory();
     const couponRepository = new CouponRepositoryMemory();
+
     const placeOrder = new PlaceOrder(
       productRepository,
       orderRepository,
       couponRepository
     );
+
     const input = {
       cpf: '935.411.347-80',
       orderProducts: [
@@ -21,7 +23,8 @@ describe('PlaceOrder', () => {
         { productId: 3, quantity: 3 },
       ],
       coupon: "VALE20"
-    }
+    };
+
     const output = placeOrder.execute(input);
     expect(output.total).toBe(4872);
   });

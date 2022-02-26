@@ -11,6 +11,6 @@ export default class CouponRepositoryMemory implements CouponRepository {
   };
   
   getByCode(code: string): Coupon | undefined {
-    return this.coupons.find(coupon => coupon.code === code)
+    return this.coupons.find(coupon => coupon.code === code);
   } ;
 }
